@@ -1,0 +1,8 @@
+f = int(input())
+n = int(input())
+nearest = n
+while n != 0:
+   if max(n, f) - min(n, f) < max(nearest, f) - min(nearest, f):
+      nearest = n
+   n = int(input())
+print(nearest)
